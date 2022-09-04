@@ -16,35 +16,35 @@ type Author struct {
 	Age  uint   `json:"age"`
 }
 
-var Authors = make([]Author, 5)
-
-func main() {
-	Authors[0] = Author{
+var Authors = []Author{
+	{
 		Id:   1,
 		Name: "Duart",
 		Age:  20,
-	}
-	Authors[1] = Author{
+	},
+	{
 		Id:   2,
 		Name: "test2",
 		Age:  21,
-	}
-	Authors[2] = Author{
+	},
+	{
 		Id:   3,
 		Name: "test3",
 		Age:  21,
-	}
-	Authors[3] = Author{
+	},
+	{
 		Id:   4,
 		Name: "test4",
 		Age:  21,
-	}
-	Authors[4] = Author{
+	},
+	{
 		Id:   5,
 		Name: "test5",
 		Age:  21,
-	}
+	},
+}
 
+func main() {
 	e := echo.New()
 
 	e.GET("/", hello)
