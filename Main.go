@@ -26,7 +26,7 @@ func main() {
 	}
 	Authors[1] = Author{
 		Id:   2,
-		Name: "Elton",
+		Name: "test2",
 		Age:  21,
 	}
 	Authors[2] = Author{
